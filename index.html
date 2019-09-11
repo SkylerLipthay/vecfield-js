@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vecfield-js</title>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="app.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div><canvas id="canvas"></canvas></div>
+      <form id="form">
+        <div><label for="xfunc">x comp</label><input type="text" id="xfunc"></div>
+        <div><label for="yfunc">y comp</label><input type="text" id="yfunc"></div>
+        <div><label for="x0">x<sub>0</sub></label><input type="text" id="x0"></div>
+        <div><label for="x1">x<sub>1</sub></label><input type="text" id="x1"></div>
+        <div><label for="y0">y<sub>0</sub></label><input type="text" id="y0"></div>
+        <div><label for="y1">y<sub>1</sub></label><input type="text" id="y1"></div>
+        <div><button type="submit">Render</button></div>
+        <div>
+          <p>x comp and y comp are mathematical expressions that determine the
+          direction of the vector at any given (x, y)</p>
+          <p>variables: <span id="vars"></span></p>
+          <p>constants: <span id="consts"></span></p>
+          <p>functions: <span id="funcs"></span></p>
+          <p>x<sub>0</sub> and x<sub>1</sub> determine the visible range of the
+          x-axis</p>
+          <p>y<sub>0</sub> and y<sub>1</sub> determine the visible range of the
+          y-axis</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
